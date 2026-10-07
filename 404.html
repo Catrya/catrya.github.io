@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Page not found</title>
+  <script>
+    // Nostr Inspect used to live at /Nostr-Events-Monitor/ before it moved to its own domain
+    (function () {
+      var match = location.pathname.match(/^\/nostr-events-monitor(\/.*)?$/i);
+      if (match) location.replace('https://nostrinspect.com' + (match[1] || '/') + location.search + location.hash);
+    })();
+  </script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0F0F1A; color: #F3F1F7; font: 16px/1.5 system-ui, sans-serif; padding: 16px; box-sizing: border-box; }
+    main { max-width: 32rem; text-align: center; }
+    a { color: #A78BFA; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Page not found</h1>
+    <p>Looking for Nostr Inspect? It now lives at <a href="https://nostrinspect.com/">nostrinspect.com</a>.</p>
+    <p><a href="https://github.com/Catrya">github.com/Catrya</a></p>
+  </main>
+</body>
+</html>
